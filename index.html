@@ -275,7 +275,46 @@
   outline: none;
 }
 }
+/* Organized expertise tags */
+.expertise-card .expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 18px 20px 24px;
+}
 
+.expertise-card .expertise-tags .tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 7px 11px;
+  border-radius: 8px;
+  font-size: 11px;
+  line-height: 1.5;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.expertise-power .expertise-tags .tag-teal {
+  color: #087f78;
+  background: #e0f7f3;
+  border: 1px solid #b7ebe2;
+}
+
+@media (max-width: 560px) {
+  .expertise-card .expertise-tags {
+    gap: 7px;
+    margin: 16px 16px 20px;
+  }
+
+  .expertise-card .expertise-tags .tag {
+    font-size: 10px;
+    padding: 6px 9px;
+  }
+}
   </style>
 </head>
 <body>
