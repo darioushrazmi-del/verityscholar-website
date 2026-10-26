@@ -70,7 +70,53 @@
         radial-gradient(ellipse at 8% 95%,#2857a33d,transparent 36%),
         linear-gradient(135deg,#0b1730,#122b4c 65%,#0d3849);
     }
-    .hero-grid { display:grid; grid-template-columns:1.08fr .92fr; gap:50px; align-items:center; }
+    
+/* Enlarge the hero diagram and its images */
+.hero-grid {
+  grid-template-columns: 0.8fr 1.2fr !important;
+  gap: 28px !important;
+}
+
+.hero-grid .diagram {
+  width: 100% !important;
+  max-width: none !important;
+  padding: 20px !important;
+  box-sizing: border-box;
+}
+
+.hero-grid .diagram-images {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+  width: 100% !important;
+}
+
+.hero-grid .diagram-images > img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 320px !important;
+  object-fit: contain !important;
+  min-width: 0 !important;
+}
+
+.hero-grid .diagram-caption {
+  font-size: 13px !important;
+  line-height: 1.7 !important;
+  margin-top: 12px !important;
+}
+
+@media (max-width: 700px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .hero-grid .diagram-images > img {
+    height: 220px !important;
+  }
+}
+
     .eyebrow {
       display:inline-flex; align-items:center; gap:8px; color:#8cf4e2;
       background:#16c6b014; border:1px solid #16c6b044;
