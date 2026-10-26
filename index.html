@@ -95,9 +95,17 @@
   display: block !important;
   width: 100% !important;
   max-width: 100% !important;
-  height: 380px !important;
-  object-fit: contain !important;
   min-width: 0 !important;
+  height: 380px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  box-sizing: border-box;
+}
+
+@media (max-width: 560px) {
+  .hero-grid .diagram-images > img {
+    height: 240px !important;
+  }
 }
 
 .hero-grid .diagram-caption {
@@ -454,51 +462,6 @@
 
   .diagram .diagram-images > img {
     height: 150px !important;
-  }
-}
-/* Give the microgrid diagram the full hero width */
-.hero-grid {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: stretch !important;
-  gap: 28px !important;
-}
-
-.hero-grid > * {
-  width: 100% !important;
-  max-width: none !important;
-  box-sizing: border-box;
-}
-
-.hero-grid .diagram {
-  width: 100% !important;
-  max-width: none !important;
-  padding: 24px !important;
-  box-sizing: border-box;
-}
-
-.hero-grid .diagram-images {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  gap: 20px !important;
-  width: 100% !important;
-}
-
-.hero-grid .diagram-images > img {
-  width: 100% !important;
-  max-width: 100% !important;
-  height: 420px !important;
-  object-fit: contain !important;
-  min-width: 0 !important;
-}
-
-@media (max-width: 560px) {
-  .hero-grid .diagram-images {
-    gap: 6px !important;
-  }
-
-  .hero-grid .diagram-images > img {
-    height: 220px !important;
   }
 }
   </style>
