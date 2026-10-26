@@ -6,6 +6,37 @@
   <meta name="theme-color" content="#0b1730">
   <meta name="description" content="Specialized training and research in power electronics, power systems, renewable energy, PLECS, MPC, reinforcement learning and intelligent microgrids.">
   <title>Power & Energy Systems Academy | Engineering, Simulation & AI</title>
+ 
+
+.diagram-images {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+}
+
+.diagram-images img {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #fff;
+}
+
+@media (max-width: 560px) {
+  .diagram-images {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 6px;
+  }
+
+  .diagram-images img {
+    height: 150px;
+  }
+}
+
   <style>
     :root {
       --navy: #0b1730;
@@ -407,12 +438,17 @@
         <div class="diagram">
          
 <img
-  src="https://uploadkon.ir/uploads/681426_26ff.jpg"
-  alt="Power converters, control, renewable energy and intelligent energy systems"
-  style="width:100%; height:auto; display:block; border-radius:12px;"
->
+    src="https://uploadkon.ir/uploads/b83c26_26ff1.jpg"
+    alt="Power converters and control systems"
+    loading="lazy"
+  >
+  <img
+    src="https://uploadkon.ir/uploads/681426_26ff.jpg"
+    alt="Microgrids and intelligent energy systems"
+    loading="lazy"
+  >
 
-          <div class="diagram-caption" data-en="A conceptual overview of converters, control, renewable sources and intelligent energy systems."
+          <div class="diagram-caption" data-en="Illustration of a microgrid architecture, including renewable energy sources, battery energy storage systems, DC–DC and DC–AC power converters, and their integration with intelligent control strategies for reliable and efficient energy management."
                data-fa="نمایی مفهومی از مبدل‌ها، کنترل، منابع تجدیدپذیر و سیستم‌های هوشمند انرژی.">A conceptual overview of converters, control, renewable sources and intelligent energy systems.</div>
         </div>
       </div>
