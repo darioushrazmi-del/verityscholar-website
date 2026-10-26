@@ -8,30 +8,32 @@
   <title>Power & Energy Systems Academy | Engineering, Simulation & AI</title>
  
 
-
-.diagram-images {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
-  gap: 10px;
-  width: 100%;
+.diagram .diagram-images {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+  width: 100% !important;
   align-items: center;
 }
 
-.diagram-images > img {
+.diagram .diagram-images > img {
   display: block !important;
-  width: calc(50% - 5px) !important;
-  max-width: calc(50% - 5px) !important;
+  width: 100% !important;
+  max-width: 100% !important;
   min-width: 0 !important;
-  height: 220px;
-  flex: 0 0 calc(50% - 5px) !important;
+  height: 220px !important;
   object-fit: contain;
   box-sizing: border-box;
 }
 
 @media (max-width: 560px) {
-  .diagram-images > img {
-    height: 150px;
+  .diagram .diagram-images {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+  }
+
+  .diagram .diagram-images > img {
+    height: 150px !important;
   }
 }
 
@@ -433,8 +435,7 @@
   <h3>Dr. Darioush Razmi</h3>
   <p>Electrical Engineering | Microgrids | Distributed Generation | Power Electronics</p >
 </div>
-        <div class="diagram">
-
+       <div class="diagram">
   <div class="diagram-images">
     <img
       src="https://uploadkon.ir/uploads/681426_26ff.jpg"
@@ -446,10 +447,12 @@
     >
   </div>
 
-          <div class="diagram-caption" data-en="Illustration of a microgrid architecture, including renewable energy sources, battery energy storage systems, DC–DC and DC–AC power converters, and their integration with intelligent control strategies for reliable and efficient energy management."
-               data-fa="نمایی مفهومی از مبدل‌ها، کنترل، منابع تجدیدپذیر و سیستم‌های هوشمند انرژی.">A conceptual overview of converters, control, renewable sources and intelligent energy systems.</div>
-        </div>
-      </div>
+  <div class="diagram-caption"
+       data-en="Microgrid architecture integrating renewable energy sources, battery storage, DC–DC and DC–AC converters, and intelligent control strategies."
+       data-fa="ساختار ریزشبکه شامل منابع تجدیدپذیر، ذخیره‌سازهای باتری، مبدل‌های DC–DC و DC–AC و راهبردهای کنترل هوشمند.">
+    Microgrid architecture integrating renewable energy sources, battery storage, DC–DC and DC–AC converters, and intelligent control strategies.
+  </div>
+</div>
     </section>
 
     <div class="metrics">
