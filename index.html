@@ -8,43 +8,33 @@
   <title>Power & Energy Systems Academy | Engineering, Simulation & AI</title>
  
 
+
 .diagram-images {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 12px;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 10px;
   width: 100%;
   align-items: center;
 }
 
-.diagram-images img {
-  display: block;
-  width: calc(50% - 6px);
-  min-width: 0;
+.diagram-images > img {
+  display: block !important;
+  width: calc(50% - 5px) !important;
+  max-width: calc(50% - 5px) !important;
+  min-width: 0 !important;
   height: 220px;
+  flex: 0 0 calc(50% - 5px) !important;
   object-fit: contain;
-  border-radius: 12px;
-  background: #fff;
-  flex: 0 0 calc(50% - 6px);
-}
-
-.diagram-caption {
-  margin-top: 14px;
-  text-align: center;
+  box-sizing: border-box;
 }
 
 @media (max-width: 560px) {
-  .diagram-images {
-    flex-wrap: nowrap;
-    gap: 6px;
-  }
-
-  .diagram-images img {
-    width: calc(50% - 3px);
-    flex-basis: calc(50% - 3px);
+  .diagram-images > img {
     height: 150px;
   }
 }
+
   <style>
     :root {
       --navy: #0b1730;
