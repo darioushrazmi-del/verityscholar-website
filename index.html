@@ -9,34 +9,42 @@
  
 
 .diagram-images {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 12px;
-  align-items: center;
   width: 100%;
+  align-items: center;
 }
 
 .diagram-images img {
   display: block;
-  width: 100%;
+  width: calc(50% - 6px);
   min-width: 0;
   height: 220px;
   object-fit: contain;
   border-radius: 12px;
   background: #fff;
+  flex: 0 0 calc(50% - 6px);
+}
+
+.diagram-caption {
+  margin-top: 14px;
+  text-align: center;
 }
 
 @media (max-width: 560px) {
   .diagram-images {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    flex-wrap: nowrap;
     gap: 6px;
   }
 
   .diagram-images img {
+    width: calc(50% - 3px);
+    flex-basis: calc(50% - 3px);
     height: 150px;
   }
 }
-
   <style>
     :root {
       --navy: #0b1730;
@@ -436,17 +444,17 @@
   <p>Electrical Engineering | Microgrids | Distributed Generation | Power Electronics</p >
 </div>
         <div class="diagram">
-         
-<img
-    src="https://uploadkon.ir/uploads/b83c26_26ff1.jpg"
-    alt="Power converters and control systems"
-    loading="lazy"
-  >
-  <img
-    src="https://uploadkon.ir/uploads/681426_26ff.jpg"
-    alt="Microgrids and intelligent energy systems"
-    loading="lazy"
-  >
+
+  <div class="diagram-images">
+    <img
+      src="https://uploadkon.ir/uploads/681426_26ff.jpg"
+      alt="Microgrid architecture"
+    >
+    <img
+      src="https://uploadkon.ir/uploads/b83c26_26ff1.jpg"
+      alt="Power electronic converters and battery systems"
+    >
+  </div>
 
           <div class="diagram-caption" data-en="Illustration of a microgrid architecture, including renewable energy sources, battery energy storage systems, DC–DC and DC–AC power converters, and their integration with intelligent control strategies for reliable and efficient energy management."
                data-fa="نمایی مفهومی از مبدل‌ها، کنترل، منابع تجدیدپذیر و سیستم‌های هوشمند انرژی.">A conceptual overview of converters, control, renewable sources and intelligent energy systems.</div>
